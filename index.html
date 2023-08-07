@@ -16,12 +16,12 @@
 	<link rel="preload" href="./assets/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<noscript><link rel="stylesheet" href="./assets/style.min.css"></noscript>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link async rel="preconnect" href="https://fonts.googleapis.com">
+    <link async rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <script defer src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script async src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script defer src="./assets/maugallery.min.js"></script>
     <script defer src="./assets/scripts.min.js"></script>
 	<title>Nina Carducci Portfolio</title>
@@ -70,7 +70,12 @@
 </header>
 <div id="about">
 	<div class="picture left">
-		<img src="./assets/images/nina.webp" alt="Nina" width="630px" height="auto">
+		<picture>
+			<source srcset="./assets/images/nina.webp" type="image/webp">
+			<img src="./assets/images/nina.avif" alt="Nina" width="630px" height="auto">
+		</picture>
+		  
+		<!--<img src="./assets/images/nina.webp" alt="Nina" width="630px" height="auto">-->
 	</div>
 	<div id="about-me">
 		<h2 class="about-me__title">A propos de moi</h2>
