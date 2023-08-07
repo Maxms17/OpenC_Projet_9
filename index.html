@@ -3,22 +3,28 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Auteur : Nina Carducci, Portfolio des services et prestations proposé ">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
-	<link rel="stylesheet" href="./assets/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
-	<meta charset="UTF-8">
-	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.js"></script>
-	<script src="./assets/scripts.js"></script>
+	
+	<meta name="twitter:card" content="Nina Carducci"/>
+	<meta name="twitter:site" content="@ninacarducci">
+	<meta name="twitter:title" content="Portfolio de Nina Carducci">
+	<meta name="twitter:description" content="Portfolio de Nina Carducci">
+	<meta name="twitter:image" content="./assets/images/nina.avif">
+
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <script defer src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script defer src="./assets/maugallery.js"></script>
+    <script defer src="./assets/scripts.js"></script>
 	<title>Nina Carducci Portfolio</title>
 </head>
 <body>
 <div class="top-header">
 	<h1 class="name">Nina Carducci</h1>
-	<div class="nav">   
+	<nav>   
 		<ul>
 			<li><a href="#about">À propos</a></li>
 			<li><a href="#gallery">Galerie</a></li>
@@ -26,9 +32,9 @@
 			<li><a href="#contact">Contact</a></li>
 			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="instagram"></a></li>
 		</ul>
-	</div>
+	</nav>
 </div>
-<div id="header">
+<header id="header">
 
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-indicators">
@@ -56,10 +62,10 @@
 			<span class="visually-hidden">Next</span>
 		</button>
 	</div>
-</div>
+</header>
 <div id="about">
 	<div class="picture left">
-		<img src="./assets/images/nina.avif" width="370px" height="558px" alt="Nina">
+		<img src="./assets/images/nina.avif" alt="Nina">
 	</div>
 	<div id="about-me">
 		<h2 class="about-me__title">A propos de moi</h2>
@@ -67,6 +73,24 @@
 		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n'avons qu'une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 			C'est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l'amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 	</div>
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "Person",
+			"name": "Carducci",
+			"givenName": "Nina",
+			"jobTitle": "photographe",
+			"telephone": "05 56 67 78 89",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "68 avenue Alsace-Lorraine",
+				"addressLocality": "Bordeaux",
+				"postalCode": "33200",
+				"addressCountry": "France"
+			},
+			"openingHours": "du lundi au vendredi de 10h à 19h"
+		}
+		</script>				
 </div>
 <div id="gallery">
 	<h3 class="title">Portfolio</h3>
@@ -142,18 +166,18 @@
 			<h3>Une question ? Une demande de devis ?</h3>
 			<p> N'hésitez pas à m'écrire ! Je vous répondrais en moins de 24 heures</p>
 			<form action="" method="post">
-				<label >Nom</label>
+				<label for="nom" >Nom</label>
 				<input aria-label="name" type="text" name="nom" id="nom">
 				<label for="email">Email</label>
 				<input type="email" name="email" id="email">
-				<label >Message</label>
+				<label for="message" >Message</label>
 				<textarea aria-label="Message" name="message" id="message" cols="30" rows="10"></textarea>
 				<input type="submit" value="Envoyer"/>
 			</form>
 			
 		</div>
 		<div class="picture right">
-			<img src="./assets/images/camera.avif" width="359px" height="477px" alt="Camera">
+			<img src="./assets/images/camera.avif" alt="Camera">
 		</div>
 	</div>
 </div>
