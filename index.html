@@ -10,8 +10,12 @@
 	<meta name="twitter:description" content="Portfolio de Nina Carducci">
 	<meta name="twitter:image" content="./assets/images/nina.avif">
 
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/style.css">
+	<link rel="preload" href="./assets/bootstrap/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet"href="./assets/bootstrap/bootstrap.min.css"></noscript>
+
+	<link rel="preload" href="./assets/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="./assets/style.css"></noscript>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
